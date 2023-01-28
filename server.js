@@ -21,7 +21,7 @@ app.get("/", function (req, res) {
   });
 });
 
-// create user route
+// create user route.
 app.post("/create_user", async function (req, res) {
   try {
     console.log("kirdi");
