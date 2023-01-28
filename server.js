@@ -131,7 +131,7 @@ app.post("/block_user", async function (req, res) {
 // fetch all users
 app.get("/all_users", async function (req, res) {
   const users = await CreateUser.findAll();
-  res.json(JSON.stringify(users, null, 2));
+  res.json(users);
 });
 
 // start server
