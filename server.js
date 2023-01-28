@@ -4,11 +4,11 @@ import { CreateUser } from "./db/db.js";
 import dotenv from "dotenv";
 import jwt from "jsonwebtoken";
 import bodyParser from "body-parser";
+const app = express();
 // middile wares
 import cors from "cors";
 app.use(cors());
 
-const app = express();
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 dotenv.config();
