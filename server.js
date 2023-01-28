@@ -25,7 +25,7 @@ app.get("/", function (req, res) {
 app.post("/create_user", async function (req, res) {
   try {
     console.log("kirdi");
-    let jwtSecretKey = process.env.JWT_SECRET_KEY;
+    let jwtSecretKey = "SUPER_SECRET_KEY";
     let data = {
       time: Date(),
       userId: req.body.id,
